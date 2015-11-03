@@ -693,6 +693,9 @@ public class CAPSPageMenu: UIViewController, UIScrollViewDelegate, UIGestureReco
                         //**************************拡張*************************************
                         self.menuItems[self.lastPageIndex].titleLabel!.backgroundColor = self.unselectedMenuItemLabelBackgroundColor
                         self.menuItems[self.currentPageIndex].titleLabel!.backgroundColor = self.selectedMenuItemLabelBackgroundColor
+                        if self.currentPageIndex == 1 {
+                            self.menuItems[self.currentPageIndex].titleLabel!.backgroundColor = UIColor.whiteColor()
+                        }
                         //**************************拡張ここまで*************************************
                     }
                 }
