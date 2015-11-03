@@ -451,8 +451,6 @@ public class CAPSPageMenu: UIViewController, UIScrollViewDelegate, UIGestureReco
                 
                 //**************************拡張*************************************
                 menuItems[currentPageIndex].titleLabel!.backgroundColor = selectedMenuItemLabelBackgroundColor
-                menuItems[currentPageIndex].titleLabel!.layer.cornerRadius = 5
-                menuItems[currentPageIndex].titleLabel!.layer.masksToBounds = true
                 //**************************拡張ここまで*************************************
             }
         }
@@ -695,8 +693,6 @@ public class CAPSPageMenu: UIViewController, UIScrollViewDelegate, UIGestureReco
                         //**************************拡張*************************************
                         self.menuItems[self.lastPageIndex].titleLabel!.backgroundColor = self.unselectedMenuItemLabelBackgroundColor
                         self.menuItems[self.currentPageIndex].titleLabel!.backgroundColor = self.selectedMenuItemLabelBackgroundColor
-                        self.menuItems[self.currentPageIndex].titleLabel!.layer.cornerRadius = 5
-                        self.menuItems[self.currentPageIndex].titleLabel!.layer.masksToBounds = true
                         //**************************拡張ここまで*************************************
                     }
                 }
